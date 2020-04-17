@@ -1,4 +1,4 @@
 <a [class]="link.type" target="_blank" [href]="link.href">
-  <div *ngIf="link.type === 'external'" class="fa fa-external-link"></div>
+  <div *ngIf="isExternalLink(link)" class="fa fa-external-link"></div>
   <div>{{ link.value }}</div>
 </a>
